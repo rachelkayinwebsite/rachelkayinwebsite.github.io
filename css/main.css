@@ -91,6 +91,11 @@ $black			: #222;
   font-weight: 300;
 }
 
+@font-face {
+  font-family: futura;
+  src: url(../fonts/futura_book.ttf);
+}
+
 body {
   color: #777777;
   font-family: "Poppins", sans-serif;
@@ -2053,12 +2058,34 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   background: transparent;
+  color:white !important;
 }
 
 #header.header-scrolled {
   transition: all 0.5s;
   background:white;
   box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+  color:black !important;
+}
+
+#header h4{
+  transition: all 0.3s;
+  color:white;
+}
+
+.header-scrolled h4{
+  transition: all 0.3s;
+  color:black !important;
+}
+
+#header a{
+  transition: all 0.3s;
+  color:white;
+}
+
+.header-scrolled a{
+  transition: all 0.3s;
+  color:black !important;
 }
 
 #header.header-scrolled .main-menu {
@@ -2072,7 +2099,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu li:hover > a, .menu-active, .parent-active > .sf-with-ul {
-  color: #8490ff !important;
+  /*color: grey !important;*/
 }
 
 /*--------------------------------------------------------------
@@ -4326,7 +4353,11 @@ dl.accordion.time-line:before {
 /*  Footer Styles
 /* =================================== */
 .footer-area {
-  background-color: #04091e;
+  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+}
+
+.single-footer-widget {
+  text-align:center;
 }
 
 .single-footer-widget h4 {
@@ -4462,6 +4493,7 @@ dl.accordion.time-line:before {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  text-align:center;
 }
 
 .single-footer-widget .footer-social a i {

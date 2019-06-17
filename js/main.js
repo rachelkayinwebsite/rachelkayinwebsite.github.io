@@ -7,6 +7,9 @@ $(document).ready(function() {
     //     },i*500)
     // });
 
+    window.onbeforeunload = function () {
+            window.scrollTo(0,0);
+    };
     //------- Niceselect  js --------//  
 
     if (document.getElementById("default-select")) {
@@ -333,7 +336,7 @@ $(document).ready(function() {
     //------- Header Scroll Class  js --------//  
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 25) {
+        if ($(this).scrollTop() > 50) {
             $('#header').addClass('header-scrolled');
         } else {
             $('#header').removeClass('header-scrolled');
