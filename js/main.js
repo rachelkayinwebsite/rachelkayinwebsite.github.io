@@ -24,33 +24,16 @@ $(document).ready(function() {
 
     //------- Lightbox  js --------//  
 
-    $('.img-pop-up').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
+    $('.popup-modal').magnificPopup({
+        type: 'inline',
+        mainClass:'mfp-fade',
+        removalDelay:300,
     });
 
-    $('.play-btn').magnificPopup({
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false
-    });
-
-    //------- Counter  js --------//  
-
-     if(document.getElementById("facts-area")){
-      $('.counter').counterUp({
-          delay: 10,
-          time: 1000
-      });
-    }
-
-    //------- Skill  js --------//  
-
-    $('.skill').simpleSkillbar();
+    $(document).on('click', '.popup-modal-dismiss', function (e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });    
 
     //------- Filter  js --------//  
 
@@ -65,7 +48,7 @@ $(document).ready(function() {
       });
 
 
-      if(document.getElementById("portfolio")){
+      if(document.getElementById("poems")){
             var $grid = $(".grid").isotope({
               itemSelector: ".all",
               percentPosition: true,
@@ -77,7 +60,6 @@ $(document).ready(function() {
 
 
     //------- Timeline js --------//  
-
 
     $('.content').each( function(i){
       
@@ -234,7 +216,7 @@ $(document).ready(function() {
             $('#mobile-body-overly').toggle();
         });
 
-            $(document).on('click', function(e) {
+        $(document).on('click', function(e) {
             var container = $("#mobile-nav, #mobile-nav-toggle");
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 if ($('body').hasClass('mobile-nav-active')) {

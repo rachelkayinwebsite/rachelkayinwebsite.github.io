@@ -1,0 +1,35 @@
+.service {
+	padding: 30px;
+	background: $white;
+	box-shadow: 0 1px 2px 0px rgba($black, .1);
+	transition: .3s all ease-in-out;
+	top: 0;
+	position: relative;
+	&:hover {
+		box-shadow: 0 8px 50px -5px rgba($black, .1);
+		top: -2px;
+	}
+	.service-number {
+		flex: 0 0 60px;
+		span {
+			position: relative;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			border-radius: 50%;
+			background: $primary;
+			display: inline-block;
+			color: $white;
+			text-align: center;	
+		}
+	}
+	.service-about {
+		*:last-child {
+			margin-bottom: 0;
+		}
+		h3 {
+			font-size: 1.2rem;
+			margin-bottom: 10px;
+		}
+	}
+}

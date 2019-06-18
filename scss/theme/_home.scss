@@ -2,6 +2,11 @@
 /*  Homepage Styles
 /* =================================== */
 
+@font-face {
+  font-family: futura;
+  src: url(../fonts/futura_book.ttf);
+}
+
 .section-gap {
     padding: 120px 0;
 }
@@ -119,23 +124,26 @@
 .banner-area {
     background:$offwhite;
     .fullscreen {
-        height: 750px !important;
+        height: 100vh !important;
     }
 }
 
 .banner-left{
-    h6{
-        text-transform:uppercase;
-        font-weight:400;
+    right: 0;
+    position: absolute;
+    color: white;
+    padding-right: 35px;
+    h6 {
+        text-transform: uppercase;
+        font-weight: 400;
         letter-spacing: 2px;
+        color: white;
     }
-    h1{
-        margin:20px 0;
-        font-size:60px;
-        text-transform:uppercase;
-        @media(max-width:991px){
-            font-size:30px;
-        }
+    h1 {
+        margin: 20px 0;
+        font-size: 60px;
+        text-transform: uppercase;
+        color: white;
     }
     .primary-btn{
         @extend .p1-gradient-bg;
@@ -160,6 +168,8 @@
         display:block;
     }
 }
+
+
 
 
 
@@ -690,6 +700,10 @@
         margin: 0px 10px;
         font-weight: 600;
     }
+}
+
+.divider {
+    width:80%;
 }
 
 
