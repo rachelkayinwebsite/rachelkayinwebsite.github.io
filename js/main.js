@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     
     // $('.banner-hidden').each(function(i){
@@ -6,9 +7,21 @@ $(document).ready(function() {
     //     },i*500)
     // });
 
-    $('.carousel').carousel({
-        
-    });
+    // Materialize Carousel
+    var elem = document.querySelector('.carousel');
+    const options = {
+        onCycleTo: (poem) => {
+            const instance = M.Carousel.getInstance(elem);
+            //Set bottom text and the href to smth cool
+            const poemTitle = $(poem).attr('data-title')
+            const poemHref = $(poem).attr('data-href')
+            $('#selected-poem').text(poemTitle)
+            $('#read-poem').attr('href',poemHref)
+        },
+        indicators:true,
+
+    }
+    var instances = M.Carousel.init(elem,options);
 
     window.onbeforeunload = function () {
             window.scrollTo(0,0);

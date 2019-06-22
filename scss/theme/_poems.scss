@@ -1,7 +1,10 @@
-$carousel-height: 600px !default;
-$carousel-item-height: $carousel-height / 2 !default;
-$carousel-item-width: $carousel-item-height !default;
+$carousel-height: 450px !default;
+$carousel-item-height: 300px !default;
+$carousel-item-width: 300px !default;
 
+.read-poem {
+  margin-top:20px
+}
 .carousel {
   a {
     -webkit-transition: none;
@@ -54,7 +57,7 @@ $carousel-item-width: $carousel-item-height !default;
   transform-origin: 0% 50%;
 
   .carousel-item {
-    display: none;
+    visibility: hidden;
     width: $carousel-item-width;
     height: $carousel-item-height;
     position: absolute;
@@ -63,6 +66,8 @@ $carousel-item-width: $carousel-item-height !default;
 
     & > img {
       width: 100%;
+      object-fit:cover;
+      height:100%;
     }
   }
 
@@ -76,7 +81,7 @@ $carousel-item-width: $carousel-item-height !default;
 
     .indicator-item {
       &.active {
-        background-color: #fff;
+        background-color: #62bdfc;
       }
 
       display: inline-block;
@@ -85,7 +90,7 @@ $carousel-item-width: $carousel-item-height !default;
       height: 8px;
       width: 8px;
       margin: 24px 4px;
-      background-color: rgba(255,255,255,.5);
+      background-color: rgba(98,198,252,.5);
 
       transition: background-color .3s;
       border-radius: 50%;
