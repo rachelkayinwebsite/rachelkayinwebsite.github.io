@@ -200,8 +200,13 @@
 }
 
 #mobile-nav-toggle i {
-  color: $black;
+  color: $white;
   font-weight: 900;  
+  transition: all 0.3s;
+}
+
+i.mobile-nav-scrolled{
+  color: $black !important;
 }
 
 @media (max-width: 991px) {

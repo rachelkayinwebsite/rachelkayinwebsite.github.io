@@ -142,7 +142,7 @@ $(document).ready(function() {
 
                     if ($('body').hasClass('mobile-nav-active')) {
                         $('body').removeClass('mobile-nav-active');
-                        $('#mobile-nav-toggle i').toggleClass('lnr-times lnr-bars');
+                        $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu');
                         $('#mobile-body-overly').fadeOut();
                     }
                     return false;
@@ -205,8 +205,10 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 50) {
             $('#header').addClass('header-scrolled');
+            $('#mobile-nav-toggle i').addClass('mobile-nav-scrolled')
         } else {
             $('#header').removeClass('header-scrolled');
+            $('#mobile-nav-toggle i').removeClass('mobile-nav-scrolled')
         }
     });
 

@@ -1000,8 +1000,13 @@ td, th {
 }
 
 #mobile-nav-toggle i {
-  color: #222;
+  color: #fff;
   font-weight: 900;
+  transition: all 0.3s;
+}
+
+i.mobile-nav-scrolled {
+  color: #222 !important;
 }
 
 @media (max-width: 991px) {
