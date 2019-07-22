@@ -2,6 +2,35 @@
 /*  Accolades Section Styles
 /* =================================== */
 
+
+// .grunge-preview:hover {
+//     position: relative;
+// }
+// .grunge-preview:hover:after {
+//     content: url(../img/grunge_preview.png); /* no need for qoutes */
+//     display: block;
+//     position: absolute;
+//     right:10px;
+//     bottom:10px;
+//     z-index:500000;
+//     transform: scale(.4);
+//     transition: .3s all ease-in-out;
+// }
+
+// .qipao-preview:hover {
+//     position: relative;
+// }
+// .qipao-preview:hover:after {
+//     content: url(../img/qipao_preview.png); /* no need for qoutes */
+//     display: block;
+//     position: absolute;
+//     right:10px;
+//     bottom:10px;
+//     z-index:500000;
+//     transform: scale(.4);
+//     transition: .3s all ease-in-out;
+// }
+
 .accolades-area {
     background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
 }

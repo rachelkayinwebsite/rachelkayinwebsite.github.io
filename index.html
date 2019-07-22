@@ -17,16 +17,21 @@
 		<title>Rachel Ka Yin</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-			<!--
-			CSS
-			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">									
-			<link rel="stylesheet" href="css/animate.min.css">		
-			<link rel="stylesheet" href="css/main.css">
-			<script src="https://kit.fontawesome.com/2f79b70be3.js"></script>
-		</head>
+		<!-- CSS  -->
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">									
+		<link rel="stylesheet" href="css/animate.min.css">		
+		<link rel="stylesheet" href="css/main.css">
+		<script src="https://kit.fontawesome.com/2f79b70be3.js"></script>
+		<link href="./jquery.minipreview.css" rel="stylesheet">
+		<!-- Heap Analytics -->
+
+		<script type="text/javascript">
+		    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+		      heap.load("2769151907");
+		</script>
+	</head>
 		<body>	
 		  <header id="header">
 		    <div class="container main-menu">
@@ -58,7 +63,7 @@
 				    <img class="img-fluid jarallax-img" src="img/rachel4.jpeg" alt="">
 				    <div class="col-lg-5 col-md-5 banner-left">
 						<h1 class="banner-hidden">Rachel Leung</h1>
-						<h6 class="banner-hidden" style="text-align:right">Poet, Writer, Student</h6>
+						<h6 class="banner-hidden" style="text-align:right">Poet, Editor, Writer</h6>
 					</div>
 				</div>			
 			</section>
@@ -200,11 +205,18 @@
 				                    <div class="cbp_tmlabel">
 				                    	<span>Publication of four poems</span> 
 										<blockquote class="blockquote">
-											<p class="mb-0">Proverse Poetry Prize 2018 (Single Poems): Mingled Voices 3</p>
-											<footer class="blockquote-footer"><cite title="Source Title">"The New Americana"</cite></footer>
-											<footer class="blockquote-footer"><cite title="Source Title">"The seven hundred and ninety-six"</cite></footer>
-											<footer class="blockquote-footer"><cite title="Source Title">"Mary-Sue"</cite></footer>
-											<footer class="blockquote-footer"><cite title="Source Title">"Sweet like a Bao"</cite></footer>
+											<div class="row">
+												<div class="col-sm-10">
+													<p class="mb-0">Proverse Poetry Prize 2018 (Single Poems): Mingled Voices 3</p>
+													<footer class="blockquote-footer"><cite title="Source Title">"The New Americana"</cite></footer>
+													<footer class="blockquote-footer"><cite title="Source Title">"The seven hundred and ninety-six"</cite></footer>
+													<footer class="blockquote-footer"><cite title="Source Title">"Mary-Sue"</cite></footer>
+													<footer class="blockquote-footer"><cite title="Source Title">"Sweet like a Bao"</cite></footer>
+												</div>
+												<div class="col-sm-2">
+														hi
+												</div>
+											</div>
 										</blockquote>
 				                    </div>
 				                </li>
@@ -250,7 +262,7 @@
 				                    <div class="cbp_tmlabel">
 				                    	<span>Published article</span> 
 										<blockquote class="blockquote">
-											<p class="mb-0"><a target="_blank" href="https://phasermagazine.com/main/2019/4/29/the-rise-and-evolution-of-the-qipao">PHASER Magazine: The Rise and Evolution of the Qipao</a></p>
+											<p class="mb-0"><a class="qipao-preview" target="_blank" href="https://phasermagazine.com/main/2019/4/29/the-rise-and-evolution-of-the-qipao">PHASER Magazine: The Rise and Evolution of the Qipao</a></p>
 										</blockquote>
 				                    </div>
 				                </li>
@@ -260,7 +272,7 @@
 				                    <div class="cbp_tmlabel">
 				                    	<span>Published article</span> 
 										<blockquote class="blockquote">
-											<p class="mb-0"><a target="_blank" href="https://phasermagazine.com/main/2019/5/19/tips-to-get-that-grungey-eye-look-youve-been-seeing-everywhere">PHASER Magazine: Tips to get THAT grunge eye look you’ve been seeing everywhere</a></p>
+											<p class="mb-0"><a class="grunge-preview" target="_blank" href="https://phasermagazine.com/main/2019/5/19/tips-to-get-that-grungey-eye-look-youve-been-seeing-everywhere">PHASER Magazine: Tips to get THAT grunge eye look you’ve been seeing everywhere</a></p>
 										</blockquote>
 				                    </div>
 				                </li>
@@ -452,54 +464,59 @@ and someone tried to tune the piano.
 										<h6 class="text-center">-for victor-</h6>
 										<p class="text-center"><br>[Special Commendation in Oxford Brookes International Poetry Competition 2018 (EAL Category)]</p>
 <p class="poem">
-if you could give to me the first whisper
-that flits in splinters from the lips and
-still lies long with
-grief upon your cheek-
-the one that hesitates and
-sighs to start again
-to
-tell of parted halves and
-quartered quarters but slumbering
-forgets to rewind and
-repeat.
+I
 
-if you could give to me the first pain
-and the second that rushes through
-the windy lanes in chorus to salute the
-heart in its casket,
-remembering the name in
-the eye of your
-aching dream-
-perhaps, then,
-you will drown in its terrible
-sillage,
-you my one most
-tender,
-tongueless theme.
+sink, sink deep
+and
+carve a niche into my head
+fish scales falling
+fall
+fall the way
+still-green leaves
+fall like rain
+wind,
+wind,
+sky
+grey
 
-if you could give the first falling to me,
-the first falling from a
-great height after which you will
-find yourself alive at last-
-gliding with such irrationality through
-feverish spring,
-and sweet, and fresh perhaps
-your blood will sing and
-the moon, will for once,
-arch towards the looking-glass.
+a concrete lightness
+simmering stones and
+stale week-old tea bags
+stuck
+a splinter
+a lancet
+a three-inch tarantula in my side
 
-and now
-i will give to you my
-end,
-my one and final true,
-therefore-
-song and roar and murmur
-(my voice)
-to whom refuge bright my soul
-belongs
-through and through and 
-through.
+i cannot look you in
+the eye, the eye, the eye.
+
+II
+
+it sings
+it stops
+it threatens to turn me inside out
+from the throat
+from the seams
+in.
+
+my
+my
+my
+fingers you were holding as we
+navigate the crowded platform
+in the warm wind,
+white light
+on the train
+kite-running from the smashed window-panes
+a fishing line
+a telephone line
+a flying
+crescent ridge, half lune
+
+never the sun but always the moon.
+
+it sighs in technicolour
+spin, spin, spinning.
 </p>
 									</div>
 									<div id="poem-6" class="poem-container mfp-hide mfp-with-anim white-popup-block">
@@ -507,54 +524,26 @@ through.
 										<h6 class="text-center">-for vanessa-</h6>
 										<p class="text-center"><br>[published in ASH Michaelmas 2019]</p>
 <p class="poem">
-if you could give to me the first whisper
-that flits in splinters from the lips and
-still lies long with
-grief upon your cheek-
-the one that hesitates and
-sighs to start again
-to
-tell of parted halves and
-quartered quarters but slumbering
-forgets to rewind and
-repeat.
+lend me
+the thrill, the terrible thrill 
+of a waterless fish.
 
-if you could give to me the first pain
-and the second that rushes through
-the windy lanes in chorus to salute the
-heart in its casket,
-remembering the name in
-the eye of your
-aching dream-
-perhaps, then,
-you will drown in its terrible
-sillage,
-you my one most
-tender,
-tongueless theme.
+fresh and desperate,
+and eyes and fins and gills 
+palpitating a silence, wide-open
 
-if you could give the first falling to me,
-the first falling from a
-great height after which you will
-find yourself alive at last-
-gliding with such irrationality through
-feverish spring,
-and sweet, and fresh perhaps
-your blood will sing and
-the moon, will for once,
-arch towards the looking-glass.
+on the tarmac, dreaming
+of quicksand and molasses and road-kill, 
+gulping, in the fragrant swathes of sun.
 
-and now
-i will give to you my
-end,
-my one and final true,
-therefore-
-song and roar and murmur
-(my voice)
-to whom refuge bright my soul
-belongs
-through and through and 
-through.
+nothing of how lidless,
+and permeable and defenseless, and ill 
+it feels, in a moist, feverish skin,
+
+clutching but a swelling tear, salt-tinged, 
+from eyes wide shut, that spills
+as it lies,
+dreaming and waterless.
 </p>
 									</div>
 									<div id="poem-7" class="poem-container mfp-hide mfp-with-anim white-popup-block">
@@ -679,9 +668,13 @@ through.
                             <div class="single-footer-widget">
                             	<h4>© Rachel Leung, 2019</h4>
                                 <div class="footer-social">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/rachel-ka-yin-leung-527452163/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a target="_blank" href="https://twitter.com/rachelkayinn"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="https://instagram.com/letterlypoet"><i class="fab fa-instagram"></i></a>
+	                                <div class="row" style="font-size:15px;margin-top:25px;color:white;justify-content:center;align-items:center">
+	                                	<!-- <i style="margin-right:5px"class="fas fa-lg fa-envelope"></i> -->
+	                                	rachelkayin@gmail.com
+	                                </div>
                                 </div>
                             </div>
                         </div>
@@ -691,6 +684,7 @@ through.
             <!-- End footer Area -->		
 
 			<script src="js/vendor/jquery-2.2.4.min.js" type="text/javascript"></script>
+			<script src="./jquery.minipreview.js"></script>
 			<script src="js/popper.min.js" type="text/javascript"></script>
 			<script src="js/vendor/bootstrap.min.js" type="text/javascript"></script>		
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>	

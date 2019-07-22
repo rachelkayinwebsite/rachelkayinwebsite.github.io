@@ -1,0 +1,37 @@
+<head>
+  <meta charset="utf-8">
+  <title>MiniPreview Demo</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <link href="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.css" rel="stylesheet"> 
+  <!-- MiniPreview stuff here -->
+  <link href="./jquery.minipreview.css" rel="stylesheet">
+  <script src="./jquery.minipreview.js"></script>
+  <script type="text/javascript">
+    $(function() {
+                $('#p1 a').miniPreview({ prefetch: 'pageload' });
+                $('#p2 a').miniPreview({ prefetch: 'parenthover' });
+                $('#p3 a').miniPreview({ prefetch: 'none' });
+            });
+  </script> <script src="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.js"></script>
+</head>
+
+<body>
+  <p id="p1">
+    This demo shows how to add live mini-previews to links on hover. Check out this link to
+    <a href="https://codegena.com">Codegena</a>. Hover over it to see a small preview of what it points to.
+
+  </p>
+
+  <p id="p2">
+    Those previews were fetched as soon as this page loaded. This is great for having the previews ready ahead of time, but can eat up extra bandwidth. As an alternative, check out these links to
+    <a href="https://codegena.com/generator/Youtube-Embed-Code-Generator.html">Youtube Embed Code Generator</a> and
+    <a href="https://codegena.com/generator/iframe-code-generator.html">iFrame Generator</a>. These previews aren't fetched until you hover over this paragraph.
+
+  </p>
+
+  <p id="p3">Finally, check out these links to <a href="http://www.canva.com/">Canva</a> and <a href="http://unheap.com">Unheap</a>. These previews are only fetched when needed. This saves the most bandwidth, but there will be a delay before the previews can be shown.
+
+  </p>
+</body>

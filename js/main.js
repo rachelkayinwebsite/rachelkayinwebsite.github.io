@@ -1,4 +1,18 @@
 $(document).ready(function() {
+    // $('.grunge-preview').miniPreview();
+
+    $('.grunge-preview').miniPreview({
+        src:'./img/grunge_preview.png',
+        width:1409, // Image dimensions
+        height:417,
+        scale:0.5
+    });
+    $('.qipao-preview').miniPreview({
+        src:'./img/qipao_preview.png',
+        width:1400,
+        height:478,
+        scale:0.5
+    });
     // Materialize Carousel
     var elem = document.querySelector('.carousel');
     const options = {
@@ -9,6 +23,7 @@ $(document).ready(function() {
             const poemHref = $(poem).attr('data-href')
             $('#selected-poem').text(poemTitle)
             $('#read-poem').attr('href',poemHref)
+            $('#read-poem').attr('poem-title',poemTitle)
         },
         indicators:true,
 
