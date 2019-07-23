@@ -2,6 +2,11 @@ $carousel-height: 450px !default;
 $carousel-item-height: 300px !default;
 $carousel-item-width: 300px !default;
 
+@font-face {
+  font-family: "Charpentier";
+  src: url(../CharpentierRenRed-Normal.otf);
+}
+
 .read-poem {
   margin-top:20px
 }
@@ -104,15 +109,38 @@ $carousel-item-width: 300px !default;
   }
 }
 
+::-webkit-scrollbar {
+    // width: 20px;  /* Remove scrollbar space */
+}
+
 .mfp-content {
 	width:60% !important;
 	padding:45px;
 	background:white;
 	max-height:80%;
-	overflow-y:scroll;
+	overflow-y:auto;
+  overflow-x:hidden;
+  background-image: url("../img/paper-bg.jpg");
+}
+
+@media only screen and (max-width: 600px) {
+  .mfp-content {
+    width:90% !important;
+  }
+  .poem-title {
+    font-size:20px !important;
+  }
+  .poem {
+    font-size:13px !important;
+  }
+}
+
+.poem-font {
+  font-family: "Times New Roman"
 }
 
 .poem-title {
+  font-size:28px;
 	font-weight:bold;
 	font-style: italic;
 }
@@ -124,6 +152,13 @@ $carousel-item-width: 300px !default;
 .poem {
 	white-space:pre;
 	text-align:center;
+  font-size:16px;
+}
+
+#selected-poem {
+  font-style:italic;
+  font-weight:600;
+  font-size:22px;
 }
 
 .mfp-fade.mfp-bg {

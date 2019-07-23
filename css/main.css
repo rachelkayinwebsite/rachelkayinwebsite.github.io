@@ -2145,6 +2145,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #2CA8FF !important;
 }
 
+@font-face {
+  font-family: "Charpentier";
+  src: url(../CharpentierRenRed-Normal.otf);
+}
 .read-poem {
   margin-top: 20px;
 }
@@ -2239,10 +2243,30 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 45px;
   background: white;
   max-height: 80%;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-image: url("../img/paper-bg.jpg");
+}
+
+@media only screen and (max-width: 600px) {
+  .mfp-content {
+    width: 90% !important;
+  }
+
+  .poem-title {
+    font-size: 20px !important;
+  }
+
+  .poem {
+    font-size: 13px !important;
+  }
+}
+.poem-font {
+  font-family: "Times New Roman";
 }
 
 .poem-title {
+  font-size: 28px;
   font-weight: bold;
   font-style: italic;
 }
@@ -2254,6 +2278,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 .poem {
   white-space: pre;
   text-align: center;
+  font-size: 16px;
+}
+
+#selected-poem {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .mfp-fade.mfp-bg {

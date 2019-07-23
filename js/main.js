@@ -13,6 +13,30 @@ $(document).ready(function() {
         height:478,
         scale:0.5
     });
+    $('.hermes-preview').miniPreview({
+        src:'./img/hermes_preview.png',
+        width:770,
+        height:414,
+        scale:0.5
+    });
+    $('.rimowa-preview').miniPreview({
+        src:'./img/rimowa_preview.png',
+        width:774,
+        height:440,
+        scale:0.5
+    });
+    $('.chanel-preview').miniPreview({
+        src:'./img/chanel_preview.png',
+        width:792,
+        height:479,
+        scale:0.5
+    });
+    $('.exfoliation-preview').miniPreview({
+        src:'./img/exfoliation_preview.png',
+        width:752,
+        height:400,
+        scale:0.5
+    });
     // Materialize Carousel
     var elem = document.querySelector('.carousel');
     const options = {
