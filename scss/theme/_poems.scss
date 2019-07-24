@@ -114,13 +114,15 @@ $carousel-item-width: 300px !default;
 }
 
 .mfp-content {
-	width:60% !important;
+  width: auto !important;
 	padding:45px;
 	background:white;
 	max-height:80%;
 	overflow-y:auto;
   overflow-x:hidden;
-  background-image: url("../img/paper-bg.jpg");
+  background-image: url("../img/paper-bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 600px) {
@@ -136,7 +138,7 @@ $carousel-item-width: 300px !default;
 }
 
 .poem-font {
-  font-family: "Times New Roman"
+  // font-family: "Times New Roman"
 }
 
 .poem-title {

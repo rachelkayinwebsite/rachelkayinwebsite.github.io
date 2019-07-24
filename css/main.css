@@ -2239,13 +2239,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .mfp-content {
-  width: 60% !important;
+  width: auto !important;
   padding: 45px;
   background: white;
   max-height: 80%;
   overflow-y: auto;
   overflow-x: hidden;
-  background-image: url("../img/paper-bg.jpg");
+  background-image: url("../img/paper-bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2261,10 +2263,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 13px !important;
   }
 }
-.poem-font {
-  font-family: "Times New Roman";
-}
-
 .poem-title {
   font-size: 28px;
   font-weight: bold;
