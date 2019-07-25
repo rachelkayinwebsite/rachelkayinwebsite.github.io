@@ -7,6 +7,10 @@
   src: url(../fonts/futura_book.ttf);
 }
 
+body {
+    overflow-x:hidden;
+}
+
 .no-scroll {
     overflow: hidden;
 }
