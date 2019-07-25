@@ -64,11 +64,20 @@ $(document).ready(function() {
         type: 'inline',
         mainClass:'mfp-fade',
         removalDelay:300,
+        callbacks: {
+        open: function() {
+            $('body').addClass('no-scroll')
+            }
+        },
+        close: function() {
+            $('body').removeClass('no-scroll')
+        }
     });
 
     $(document).on('click', '.popup-modal-dismiss', function (e) {
         e.preventDefault();
         $.magnificPopup.close();
+        alert('hi!')
     });    
 
     //------- Timeline js --------//  

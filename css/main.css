@@ -1116,6 +1116,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-family: futura;
   src: url(../fonts/futura_book.ttf);
 }
+.no-scroll {
+  overflow: hidden;
+}
+
 .section-gap {
   padding: 120px 0;
 }
@@ -2241,7 +2245,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .mfp-content {
   width: auto !important;
   max-width: 90%;
-  padding: 6vw;
+  padding: 4vw;
   background: white;
   max-height: 80%;
   overflow-y: auto;
@@ -2269,7 +2273,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .poem {
   white-space: pre;
   text-align: center;
-  font-size: calc(11px + 0.3vw);
+  font-size: calc(9px + 0.4vw);
 }
 
 #selected-poem {
