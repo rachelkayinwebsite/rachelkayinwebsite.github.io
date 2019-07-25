@@ -2241,7 +2241,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .mfp-content {
   width: auto !important;
   max-width: 90%;
-  padding: 45px;
+  padding: 6vw;
   background: white;
   max-height: 80%;
   overflow-y: auto;
