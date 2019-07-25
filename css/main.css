@@ -2244,8 +2244,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .mfp-content {
   width: auto !important;
-  max-width: 93%;
-  padding: 4vw;
+  max-width: 95%;
+  padding: 3.8vw;
   background: white;
   max-height: 80%;
   overflow-y: auto;
@@ -2273,7 +2273,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .poem {
   white-space: pre;
   text-align: center;
-  font-size: calc(9px + 0.4vw);
+  font-size: calc(9px + 0.3vw);
 }
 
 #selected-poem {
