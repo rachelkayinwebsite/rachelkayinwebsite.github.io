@@ -2273,7 +2273,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .poem {
   white-space: pre;
   text-align: center;
-  font-size: calc(9px + 0.3vw);
+  font-size: calc(8.5px + 0.3vw);
 }
 
 #selected-poem {
