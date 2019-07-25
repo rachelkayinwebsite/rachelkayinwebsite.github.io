@@ -115,8 +115,8 @@ $carousel-item-width: 300px !default;
 
 .mfp-content {
   width: auto !important;
-  max-width:93%;
-	padding:4vw;
+  max-width:95%;
+	padding:3.8vw;
 	background:white;
 	max-height:80%;
 	overflow-y:auto;
@@ -157,7 +157,7 @@ $carousel-item-width: 300px !default;
 	white-space:pre;
 	text-align:center;
   // font-size:1.2vw;
-  font-size:calc(9px + 0.4vw);
+  font-size:calc(9px + 0.3vw);
 }
 
 #selected-poem {
