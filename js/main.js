@@ -66,11 +66,11 @@ $(document).ready(function() {
         removalDelay:300,
         callbacks: {
         open: function() {
-            $('body').addClass('no-scroll')
+            $('.mfp-container').addClass('no-scroll')
             }
         },
         close: function() {
-            $('body').removeClass('no-scroll')
+            $('.mfp-container').removeClass('no-scroll')
         }
     });
 
