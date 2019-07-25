@@ -2240,6 +2240,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .mfp-content {
   width: auto !important;
+  max-width: 90%;
   padding: 45px;
   background: white;
   max-height: 80%;
@@ -2251,16 +2252,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media only screen and (max-width: 600px) {
-  .mfp-content {
-    width: 90% !important;
-  }
-
   .poem-title {
     font-size: 20px !important;
-  }
-
-  .poem {
-    font-size: 13px !important;
   }
 }
 .poem-title {
@@ -2276,7 +2269,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .poem {
   white-space: pre;
   text-align: center;
-  font-size: 16px;
+  font-size: calc(11px + 0.3vw);
 }
 
 #selected-poem {

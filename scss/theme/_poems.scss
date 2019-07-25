@@ -115,6 +115,7 @@ $carousel-item-width: 300px !default;
 
 .mfp-content {
   width: auto !important;
+  max-width:90%;
 	padding:45px;
 	background:white;
 	max-height:80%;
@@ -127,13 +128,14 @@ $carousel-item-width: 300px !default;
 
 @media only screen and (max-width: 600px) {
   .mfp-content {
-    width:90% !important;
+    // width:90% !important;
   }
   .poem-title {
     font-size:20px !important;
   }
   .poem {
-    font-size:13px !important;
+    // font-size:13px !important;
+    // font-size:5%
   }
 }
 
@@ -154,7 +156,8 @@ $carousel-item-width: 300px !default;
 .poem {
 	white-space:pre;
 	text-align:center;
-  font-size:16px;
+  // font-size:1.2vw;
+  font-size:calc(11px + 0.3vw);
 }
 
 #selected-poem {
