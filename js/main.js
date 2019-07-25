@@ -64,14 +64,14 @@ $(document).ready(function() {
         type: 'inline',
         mainClass:'mfp-fade',
         removalDelay:300,
-        callbacks: {
-        open: function() {
-            $('.mfp-container').addClass('no-scroll')
-            }
-        },
-        close: function() {
-            $('.mfp-container').removeClass('no-scroll')
-        }
+        // callbacks: {
+        // open: function() {
+        //     $('.mfp-container').addClass('no-scroll')
+        //     }
+        // },
+        // close: function() {
+        //     $('.mfp-container').removeClass('no-scroll')
+        // }
     });
 
     $(document).on('click', '.popup-modal-dismiss', function (e) {
