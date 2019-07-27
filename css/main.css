@@ -2165,7 +2165,7 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 582px;
   perspective: 500px;
   transform-style: preserve-3d;
   transform-origin: 0% 50%;
@@ -2193,7 +2193,7 @@ body {
 .carousel.carousel-slider .carousel-item {
   width: 100%;
   height: 100%;
-  min-height: 450px;
+  min-height: 582px;
   position: absolute;
   top: 0;
   left: 0;
@@ -2209,7 +2209,7 @@ body {
 .carousel .carousel-item {
   visibility: hidden;
   width: 300px;
-  height: 300px;
+  height: 388.235px;
   position: absolute;
   top: 0;
   left: 0;
@@ -2277,7 +2277,7 @@ body {
 .poem {
   white-space: pre;
   text-align: center;
-  font-size: calc(8.5px + 0.3vw);
+  font-size: calc(8px + 0.45vw);
 }
 
 #selected-poem {
