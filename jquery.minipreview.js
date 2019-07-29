@@ -12,7 +12,7 @@
     $.fn.miniPreview = function(options) {
         return this.each(function() {
             var $this = $(this);
-            var miniPreview = $this.data(PREFIX);
+            var miniPreview = $this.data(PREFIX)
             if (miniPreview) {
                 miniPreview.destroy();
             }
