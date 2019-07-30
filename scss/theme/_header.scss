@@ -7,8 +7,10 @@
 # Header
 --------------------------------------------------------------*/
 
-@media all and (max-width: 300px) {
-    #header-title { display: none; }
+@media all and (max-width: 375px) {
+    #header-title { 
+      font-size:14px
+    }
 }
 
 .main-menu{

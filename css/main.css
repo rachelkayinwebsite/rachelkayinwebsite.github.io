@@ -818,9 +818,9 @@ td, th {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-@media all and (max-width: 300px) {
+@media all and (max-width: 375px) {
   #header-title {
-    display: none;
+    font-size: 14px;
   }
 }
 .main-menu {
