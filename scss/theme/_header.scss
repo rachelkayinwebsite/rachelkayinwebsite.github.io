@@ -7,6 +7,10 @@
 # Header
 --------------------------------------------------------------*/
 
+@media all and (max-width: 300px) {
+    #header-title { display: none; }
+}
+
 .main-menu{
   padding-bottom:20px ;
   padding-top:20px ;
