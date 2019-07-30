@@ -1264,7 +1264,7 @@ body {
 }
 .banner-left h1 {
   margin: 20px 0;
-  font-size: 60px;
+  font-size: 50px;
   text-transform: uppercase;
   color: white;
 }
@@ -2128,6 +2128,7 @@ body {
     float: right;
     left: auto;
     margin: -64px 5px 0 0px;
+    top: 10px;
   }
   .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
     border-right-color: transparent;
@@ -2254,7 +2255,7 @@ body {
   max-height: 80%;
   overflow-y: auto;
   overflow-x: hidden;
-  background-image: url("../img/paper-bg-2.jpg");
+  background-image: url("../img/other/paper-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

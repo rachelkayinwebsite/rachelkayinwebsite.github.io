@@ -2,37 +2,37 @@ $(document).ready(function() {
     // $('.grunge-preview').miniPreview();
 
     $('.grunge-preview').miniPreview({
-        src:'./img/grunge_preview.png',
+        src:'./img/article_preview/grunge_preview.png',
         width:1409, // Image dimensions
         height:417,
         scale:0.5
     });
     $('.qipao-preview').miniPreview({
-        src:'./img/qipao_preview.png',
+        src:'./img/article_preview/qipao_preview.png',
         width:1400,
         height:478,
         scale:0.5
     });
     $('.hermes-preview').miniPreview({
-        src:'./img/hermes_preview.png',
+        src:'./img/article_preview/hermes_preview.png',
         width:770,
         height:414,
         scale:0.5
     });
     $('.rimowa-preview').miniPreview({
-        src:'./img/rimowa_preview.png',
+        src:'./img/article_preview/rimowa_preview.png',
         width:774,
         height:440,
         scale:0.5
     });
     $('.chanel-preview').miniPreview({
-        src:'./img/chanel_preview.png',
+        src:'./img/article_preview/chanel_preview.png',
         width:792,
         height:479,
         scale:0.5
     });
     $('.exfoliation-preview').miniPreview({
-        src:'./img/exfoliation_preview.png',
+        src:'./img/article_preview/exfoliation_preview.png',
         width:752,
         height:400,
         scale:0.5
@@ -101,7 +101,7 @@ $(document).ready(function() {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
           
             /* If the object is completely visible in the window, fadeIn it */
-            if( bottom_of_window > bottom_of_object ){
+            if( bottom_of_window > bottom_of_object-50 ){
               $(this).animate({'opacity':'1'},700);
             }
         });
