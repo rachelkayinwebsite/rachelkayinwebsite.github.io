@@ -16,7 +16,7 @@
 # Getting a copy of the website source code onto your computer
 1. Open a terminal
 2. Enter the command `cd desktop`, this will change the directory on the terminal to your desktop
-3. Enter the command `git clone https://github.com/Luke-Tan/luke-tan.github.io.git`. This will download a copy of the website source code onto your desktop
+3. Enter the command `git clone https://github.com/rachelkayinwebsite/rachelkayinwebsite.github.io.git`. This will download a copy of the website source code onto your desktop
 
 # Editing the website
 ## 1. Setup
