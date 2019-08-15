@@ -42,12 +42,15 @@ $(document).ready(function() {
     const options = {
         onCycleTo: (poem) => {
             const instance = M.Carousel.getInstance(elem);
-            //Set bottom text and the href to smth cool
+            //Set bottom text and the href to smth cool of read poem
             const poemTitle = $(poem).attr('data-title')
             const poemHref = $(poem).attr('data-href')
             $('#selected-poem').text(poemTitle)
             $('#read-poem').attr('href',poemHref)
-            $('#read-poem').attr('poem-title',poemTitle)
+            $('#read-poem').attr('poem-title',poemTitle)            
+            //Set instagram href of view poem
+            const poemInstagram = $(poem).attr('data-instagram')
+            $('#view-poem').attr('href',poemInstagram)
         },
         indicators:true,
 
