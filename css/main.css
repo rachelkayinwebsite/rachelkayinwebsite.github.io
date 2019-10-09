@@ -2373,4 +2373,8 @@ body {
   margin-left: 8px;
 }
 
+.card-anchor {
+  color: inherit;
+}
+
 /*# sourceMappingURL=main.css.map */
