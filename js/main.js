@@ -37,6 +37,24 @@ $(document).ready(function() {
         height:400,
         scale:0.5
     });
+    $('.mekong-preview').miniPreview({
+        src:'./img/article_preview/mekong_preview.png',
+        width:804,
+        height:182,
+        scale:0.6
+    });
+    $('.hkfp-preview').miniPreview({
+        src:'./img/article_preview/hkfp_preview.png',
+        width:816,
+        height:204,
+        scale:0.6
+    });
+    $('.dimsum-preview').miniPreview({
+        src:'./img/article_preview/dimsum_preview.png',
+        width:759,
+        height:300,
+        scale:0.6
+    });
     // Materialize Carousel
     var elem = document.querySelector('.carousel');
     const options = {
