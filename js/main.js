@@ -55,6 +55,18 @@ $(document).ready(function() {
         height:300,
         scale:0.6
     });
+    $('.vintage-preview').miniPreview({
+        src:'./img/article_preview/vintage_oxford_preview.PNG',
+        width:759,
+        height:300,
+        scale:0.6
+    });
+    $('.four-preview').miniPreview({
+        src:'./img/article_preview/hk_four_preview.PNG',
+        width:759,
+        height:300,
+        scale:0.6
+    });
     // Materialize Carousel
     var elem = document.querySelector('.carousel');
     const options = {
